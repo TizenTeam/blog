@@ -10,13 +10,11 @@ class IndexPage extends React.Component {
   separator = React.createRef();
 
   componentDidMount() {
-      if(this.childWrap && this.childWrap.firstChild) {
+    if (this.childWrap && this.childWrap.firstChild) {
       let childHeight = this.childWrap.offsetHeight;
       this.childHeight = childHeight;
     }
   }
-
-  console.log(this.childHeight);
 
   render() {
     const {
@@ -28,9 +26,11 @@ class IndexPage extends React.Component {
       }
     } = this.props;
 
+    console.log(this.childHeight);
+
     return (
       <React.Fragment>
-        <div ref={el => {this.childWrap = el;}}>
+        <div ref={el => {this.childWrap = el}}>
           <ThemeContext.Consumer>
             {theme => (
               <Hero theme={theme} heroHeight={this.childHeight}/>
