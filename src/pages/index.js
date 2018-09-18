@@ -16,6 +16,8 @@ class IndexPage extends React.Component {
     }
   }
 
+  console.log(this.childHeight);
+
   render() {
     const {
       data: {
