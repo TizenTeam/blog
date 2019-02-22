@@ -71,17 +71,13 @@ src > components > Hero > Feature.js
 
 It is a react component with three variables, `title`, `image` and `url`. Update these with the relevant information and commit your changes.
 
-##### External services
-
-The blog uses external services for some functions: comments, analytics. To use them you have to secure some access data. All services are free to use or have generous free tiers big enough for a personal blog.
-
-Create an `.env` file like below in the root folder. Change `...` placeholders with real data.
-
-```text
-GOOGLE_ANALYTICS_ID=...
-FB_APP_ID=...
-```
-
-### Some useful instructions & tutorials on the Gatsby Blog
+## Some useful instructions & tutorials on the Gatsby Blog
 
 * [How to install, setup and add new content to a Blog starter](https://dev.greglobinski.com/install-blog-starter/)
+
+## Site structure
+
+The blog is made up of components. Each component contains its own CSS 
+
+Home *src > components > pages > index.js
+
